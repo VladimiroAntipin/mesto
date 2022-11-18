@@ -1,0 +1,6 @@
+.elements__element {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px 10px 10px 10px;
+  z-index: 5;
+  overflow: hidden;
+}
