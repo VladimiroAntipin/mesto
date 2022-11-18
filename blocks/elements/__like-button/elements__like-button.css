@@ -1,0 +1,65 @@
+.elements__like-button {
+  width: 22px;
+  height: 19px;
+  align-self: center;
+  background-color: white;
+  background-image: url('../../../images/like-button.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  transition: opacity 0.2s linear;
+}
+
+.elements__like-button:hover {
+  opacity: 60%;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+
+.elements__like-button#likebutton1.active {
+  background-image: url('../../../images/like-button-active.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  opacity: 1;
+}
+
+.elements__like-button#likebutton2.active {
+  background-image: url('../../../images/like-button-active.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  opacity: 1;
+}
+
+.elements__like-button#likebutton3.active {
+  background-image: url('../../../images/like-button-active.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  opacity: 1;
+}
+
+.elements__like-button#likebutton4.active {
+  background-image: url('../../../images/like-button-active.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  opacity: 1;
+}
+
+.elements__like-button#likebutton5.active {
+  background-image: url('../../../images/like-button-active.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  opacity: 1;
+}
+
+.elements__like-button#likebutton6.active {
+  background-image: url('../../../images/like-button-active.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  opacity: 1;
+}

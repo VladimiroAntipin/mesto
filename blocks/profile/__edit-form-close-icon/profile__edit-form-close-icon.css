@@ -1,0 +1,25 @@
+.profile__edit-form-close-icon {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: black;
+  background-image: url('../../../images/close-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+
+.profile__edit-form-close-icon:hover {
+  opacity: 60%;
+  transition: opacity 0.2s linear;
+}
+
+@media screen and (max-width: 750px) {
+  .profile__edit-form-close-icon {
+    right: 0px;
+  }
+}

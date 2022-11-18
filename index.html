@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Mesto Russia</title>
+</head>
+
+<body class="body">
+  <div class="page">
+
+    <header class="header">
+      <img class="header__logo" src="./images/header-logo.svg" alt="Лого">
+      <img class="header__line" src="./images/header-line.jpg" alt="Линия">
+    </header>
+
+    <main class="content">
+
+      <section class="profile">
+        <img class="profile__avatar" src="./images/profile-avatar.jpg" alt="Аватар">
+        <div class="profile__block">
+          <div class="profile__info">
+            <div class="profile__first-line">
+              <p class="profile__name">Жак-Ив Кусто</p>
+              <button type="submit" class="profile__edit-button" onclick="toggle()"></button>
+            </div>
+            <p class="profile__text">Исследователь океана</p>
+          </div>
+          <button type="button" class="profile__add-button"></button>
+        </div>
+
+        <div class="profile__edit-form-overlay" id="overlay">
+          <div class="profile__edit-form" id="popup">
+            <button class="profile__edit-form-close-icon" onclick="toggle()"></button>
+            <p class="profile__edit-form-text">Редактировать профиль</p>
+            <input type="text" class="profile__edit-form-first-field">
+            <input type="text" class="profile__edit-form-second-field">
+            <button type="submit" class="profile__edit-form-submit" onclick="toggle()">Сохранить</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="elements">
+
+        <article class="elements__element">
+          <img class="elements__photo" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
+          <div class="elements__text">
+            <p class="elements__place">Карачаевск</p>
+            <button type="button" class="elements__like-button" id="likebutton1" onclick="toggle1()"></button>
+          </div>
+        </article>
+
+        <article class="elements__element">
+          <img class="elements__photo" src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Гора Эльбрус">
+          <div class="elements__text">
+            <p class="elements__place">Гора Эльбрус</p>
+            <button type="button" class="elements__like-button" id="likebutton2" onclick="toggle2()"></button>
+          </div>
+        </article>
+
+        <article class="elements__element">
+          <img class="elements__photo" src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Домбай">
+          <div class="elements__text">
+            <p class="elements__place">Домбай</p>
+            <button type="button" class="elements__like-button" id="likebutton3" onclick="toggle3()"></button>
+          </div>
+        </article>
+
+        <article class="elements__element">
+          <img class="elements__photo" src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Гора Эльбрус">
+          <div class="elements__text">
+            <p class="elements__place">Гора Эльбрус</p>
+            <button type="button" class="elements__like-button" id="likebutton4" onclick="toggle4()"></button>
+          </div>
+        </article>
+
+        <article class="elements__element">
+          <img class="elements__photo" src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Домбай">
+          <div class="elements__text">
+            <p class="elements__place">Домбай</p>
+            <button type="button" class="elements__like-button" id="likebutton5" onclick="toggle5()"></button>
+          </div>
+        </article>
+
+        <article class="elements__element">
+          <img class="elements__photo" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
+          <div class="elements__text">
+            <p class="elements__place">Карачаево-Ч...</p>
+            <button type="button" class="elements__like-button" id="likebutton6" onclick="toggle6()"></button>
+          </div>
+        </article>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">© 2022. Антипин Владимиро</p>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

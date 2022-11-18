@@ -1,0 +1,15 @@
+.profile__edit-form-second-field {
+  border: none;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 0px;
+  width: 83.25%;
+  min-height: 27px;
+  margin: 0px auto 48px;
+}
+
+@media screen and (max-width: 750px) {
+  .profile__edit-form-second-field {
+    width: 88.125%;
+    margin-bottom: 45px;
+  }
+}
