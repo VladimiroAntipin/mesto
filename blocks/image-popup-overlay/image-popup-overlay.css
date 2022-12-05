@@ -1,0 +1,22 @@
+.image-popup-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+.image-popup-overlay_active {
+  visibility: visible;
+  transition: visibility 0s, opacity 0.3s linear;
+  opacity: 1;
+}
