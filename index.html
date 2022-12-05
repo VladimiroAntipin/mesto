@@ -24,74 +24,16 @@
           <div class="profile__info">
             <div class="profile__first-line">
               <p class="profile__name">Жак-Ив Кусто</p>
-              <button type="submit" class="profile__edit-button" onclick="toggle()"></button>
+              <button type="submit" class="profile__edit-button"></button>
             </div>
             <p class="profile__text">Исследователь океана</p>
           </div>
-          <button type="button" class="profile__add-button"></button>
-        </div>
-
-        <div class="profile__edit-form-overlay" id="overlay">
-          <div class="profile__edit-form" id="popup">
-            <button class="profile__edit-form-close-icon" onclick="toggle()"></button>
-            <p class="profile__edit-form-text">Редактировать профиль</p>
-            <input type="text" class="profile__edit-form-first-field">
-            <input type="text" class="profile__edit-form-second-field">
-            <button type="submit" class="profile__edit-form-submit" onclick="toggle()">Сохранить</button>
-          </div>
+          <button type="submit" class="profile__add-button"></button>
         </div>
       </section>
 
-      <section class="elements">
-
-        <article class="elements__element">
-          <img class="elements__photo" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
-          <div class="elements__text">
-            <p class="elements__place">Карачаевск</p>
-            <button type="button" class="elements__like-button" id="likebutton1" onclick="toggle1()"></button>
-          </div>
-        </article>
-
-        <article class="elements__element">
-          <img class="elements__photo" src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Гора Эльбрус">
-          <div class="elements__text">
-            <p class="elements__place">Гора Эльбрус</p>
-            <button type="button" class="elements__like-button" id="likebutton2" onclick="toggle2()"></button>
-          </div>
-        </article>
-
-        <article class="elements__element">
-          <img class="elements__photo" src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Домбай">
-          <div class="elements__text">
-            <p class="elements__place">Домбай</p>
-            <button type="button" class="elements__like-button" id="likebutton3" onclick="toggle3()"></button>
-          </div>
-        </article>
-
-        <article class="elements__element">
-          <img class="elements__photo" src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Гора Эльбрус">
-          <div class="elements__text">
-            <p class="elements__place">Гора Эльбрус</p>
-            <button type="button" class="elements__like-button" id="likebutton4" onclick="toggle4()"></button>
-          </div>
-        </article>
-
-        <article class="elements__element">
-          <img class="elements__photo" src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Домбай">
-          <div class="elements__text">
-            <p class="elements__place">Домбай</p>
-            <button type="button" class="elements__like-button" id="likebutton5" onclick="toggle5()"></button>
-          </div>
-        </article>
-
-        <article class="elements__element">
-          <img class="elements__photo" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
-          <div class="elements__text">
-            <p class="elements__place">Карачаево-Ч...</p>
-            <button type="button" class="elements__like-button" id="likebutton6" onclick="toggle6()"></button>
-          </div>
-        </article>
-
+      <section class="cards" id="cards">
+        <!-- картинки будут здесь-->
       </section>
 
     </main>
@@ -99,6 +41,48 @@
     <footer class="footer">
       <p class="footer__copyright">© 2022. Антипин Владимиро</p>
     </footer>
+  </div>
+
+  <template id="element">
+    <div class="element">
+      <div class="element__card">
+        <img class="element__photo" src="" alt="">
+        <div class="element__button-container">
+          <button type="button" class="element__trash-button">
+        </div>
+        <div class="element__text">
+          <p class="element__place"></p>
+          <button type="button" class="element__like-button"></button>
+        </div>
+      </div>
+  </template>
+
+  <div class="edit-form-overlay">
+    <form class="edit-form">
+      <button type="button" class="edit-form__close-icon"></button>
+      <p class="edit-form__text">Редактировать профиль</p>
+      <input type="text" placeholder="Имя" class="edit-form__first-field" value="Жак-Ив Кусто">
+      <input type="text" placeholder="O себе" class="edit-form__second-field" value="Исследователь океана">
+      <button type="submit" class="edit-form__submit">Сохранить</button>
+    </form>
+  </div>
+
+  <div class="add-form-overlay">
+    <form class="add-form">
+      <button type="button" class="add-form__close-icon"></button>
+      <p class="add-form__text">Новое место</p>
+      <input type="text" placeholder="Название" class="add-form__first-field" id="ImageName" value="">
+      <input type="text" placeholder="Ссылка на картинку" class="add-form__second-field" id="URL" value="">
+      <button type="submit" class="add-form__submit">Создать</button>
+    </form>
+  </div>
+
+  <div class="image-popup-overlay">
+    <figure class="image-popup">
+      <button type="button" class="image-popup__close-icon"></button>
+      <img class="image-popup__photo" src="" alt="">
+      <figcaption class="image-popup__text"></figcaption>
+    </figure>
   </div>
 
   <script type="text/javascript" src="./script.js"></script>
