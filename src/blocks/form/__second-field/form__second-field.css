@@ -1,0 +1,6 @@
+.form__second-field {
+  display: flex;
+  flex-direction: column;
+  width: 83.25%;
+  margin: 0px auto 31.34px;
+}
