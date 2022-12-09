@@ -1,8 +1,0 @@
-.element {
-  position: relative;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px 10px 10px 10px;
-  max-height: 361px;
-  z-index: 5;
-  overflow: hidden;
-}
