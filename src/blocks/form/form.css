@@ -1,0 +1,22 @@
+.form {
+  position: relative;
+  margin: 195px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 430px;
+  height: 330px;
+  opacity: 100%;
+  z-index: 20;
+}
+
+@media screen and (max-width: 560px) {
+  .form {
+    margin: 122px auto;
+    width: 282px;
+    height: 322px;
+  }
+}
